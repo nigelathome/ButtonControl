@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "912A60561D216A8A00228ECC"
-               BuildableName = "ButtonAction.app"
-               BlueprintName = "ButtonAction"
-               ReferencedContainer = "container:ButtonAction.xcodeproj">
+               BlueprintIdentifier = "91B53D951D229AE800C91E90"
+               BuildableName = "ButtonControl.app"
+               BlueprintName = "ButtonControl"
+               ReferencedContainer = "container:ButtonControl.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "912A60561D216A8A00228ECC"
-            BuildableName = "ButtonAction.app"
-            BlueprintName = "ButtonAction"
-            ReferencedContainer = "container:ButtonAction.xcodeproj">
+            BlueprintIdentifier = "91B53D951D229AE800C91E90"
+            BuildableName = "ButtonControl.app"
+            BlueprintName = "ButtonControl"
+            ReferencedContainer = "container:ButtonControl.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "912A60561D216A8A00228ECC"
-            BuildableName = "ButtonAction.app"
-            BlueprintName = "ButtonAction"
-            ReferencedContainer = "container:ButtonAction.xcodeproj">
+            BlueprintIdentifier = "91B53D951D229AE800C91E90"
+            BuildableName = "ButtonControl.app"
+            BlueprintName = "ButtonControl"
+            ReferencedContainer = "container:ButtonControl.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "912A60561D216A8A00228ECC"
-            BuildableName = "ButtonAction.app"
-            BlueprintName = "ButtonAction"
-            ReferencedContainer = "container:ButtonAction.xcodeproj">
+            BlueprintIdentifier = "91B53D951D229AE800C91E90"
+            BuildableName = "ButtonControl.app"
+            BlueprintName = "ButtonControl"
+            ReferencedContainer = "container:ButtonControl.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

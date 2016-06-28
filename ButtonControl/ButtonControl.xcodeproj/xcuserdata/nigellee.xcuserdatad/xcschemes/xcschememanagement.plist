@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ButtonAction.xcscheme</key>
+		<key>ButtonControl.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>912A60561D216A8A00228ECC</key>
+		<key>91B53D951D229AE800C91E90</key>
 		<dict>
 			<key>primary</key>
 			<true/>
