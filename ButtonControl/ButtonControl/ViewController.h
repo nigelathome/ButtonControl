@@ -14,7 +14,9 @@
 - (IBAction)rightBtnPressed:(id)sender;
 - (IBAction)nameTextFieldDoneEditing:(id)sender;
 - (IBAction)numberTextFieldDoneEditing:(id)sender;
-- (IBAction)sliderChanged:(UISlider *)sender;
+- (IBAction)sliderChanged:(UISlider*)sender;
+- (IBAction)switchChanged:(UISwitch*)sender;
+- (IBAction)toggleControl:(UISegmentedControl*)sender;
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *numberField;

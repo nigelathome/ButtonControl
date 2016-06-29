@@ -51,7 +51,17 @@
 }
 
 - (IBAction)sliderChanged:(UISlider *)sender {
-    int progress = lroundf(sender.value);
-    self.sliderLabel.text = [NSString stringWithFormat:@"%d", progress];
+    long progress = lroundf(sender.value);
+    self.sliderLabel.text = [NSString stringWithFormat:@"%ld", progress];
+}
+
+- (IBAction)switchChanged:(UISwitch*)sender {
+    BOOL setting = sender.isOn;
+    [self.leftSwitch setOn:setting animated:YES];
+    [self.rightSwitch setOn:setting animated:YES];
+}
+
+- (IBAction)toggleControl:(UISegmentedControl*)sender {
+    
 }
 @end
