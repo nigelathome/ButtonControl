@@ -10,17 +10,18 @@
 
 @interface ViewController : UIViewController
 
-- (IBAction)leftBtnPressed:(id)sender;
-- (IBAction)rightBtnPressed:(id)sender;
 - (IBAction)nameTextFieldDoneEditing:(id)sender;
 - (IBAction)numberTextFieldDoneEditing:(id)sender;
 - (IBAction)sliderChanged:(UISlider*)sender;
 - (IBAction)switchChanged:(UISwitch*)sender;
 - (IBAction)toggleControl:(UISegmentedControl*)sender;
-@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
+- (IBAction)doSomethingButtonPressed:(id)sender;
+
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *numberField;
 @property (weak, nonatomic) IBOutlet UILabel *sliderLabel;
-
+@property (weak, nonatomic) IBOutlet UISwitch*leftSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch*rightSwitch;
+@property (weak, nonatomic) IBOutlet UIButton *doSomethingButton;
 @end
 

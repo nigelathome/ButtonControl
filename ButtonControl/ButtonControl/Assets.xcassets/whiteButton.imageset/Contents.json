@@ -4,15 +4,15 @@
       "resizing" : {
         "mode" : "9-part",
         "center" : {
-          "mode" : "fill",
+          "mode" : "tile",
           "width" : 1,
-          "height" : 2
+          "height" : 7
         },
-        "capInsets" : {
-          "bottom" : 14,
-          "top" : 22,
-          "right" : 14,
-          "left" : 14
+        "cap-insets" : {
+          "bottom" : 23,
+          "top" : 14,
+          "right" : 12,
+          "left" : 16
         }
       },
       "idiom" : "universal",
@@ -22,6 +22,10 @@
     {
       "idiom" : "universal",
       "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

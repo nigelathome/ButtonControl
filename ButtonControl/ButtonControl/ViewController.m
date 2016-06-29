@@ -18,23 +18,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.sliderLabel.text = @"50";
+    self.doSomethingButton.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)leftBtnPressed:(id)sender {
-    NSString *title = [sender titleForState:UIControlStateNormal];
-    NSString *plainText = [NSString stringWithFormat:@"%@ button pressed.", title];
-    _statusLabel.text = plainText;
-}
-
-- (IBAction)rightBtnPressed:(id)sender {
-    NSString *title = [sender titleForState:UIControlStateNormal];
-    NSString *plainText = [NSString stringWithFormat:@"%@ button pressed.", title];
-    _statusLabel.text = plainText;
 }
 
 - (IBAction)nameTextFieldDoneEditing:(id)sender {
@@ -62,6 +51,40 @@
 }
 
 - (IBAction)toggleControl:(UISegmentedControl*)sender {
+    // 0 == switches index
+    if (sender.selectedSegmentIndex == 0) {
+        self.leftSwitch.hidden = NO;
+        self.rightSwitch.hidden = NO;
+        self.doSomethingButton.hidden = YES;
+    }
+    else {
+        self.leftSwitch.hidden = YES;
+        self.rightSwitch.hidden = YES;
+        self.doSomethingButton.hidden = NO;
+    }
+}
+
+- (IBAction)doSomethingButtonPressed:(id)sender {
+    // ios 8.3 UIAlertController instead of UIActionSheet
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle: @"Are you sure?"
+                                                                             message: nil
+                                                                      preferredStyle:UIAlertControllerStyleActionSheet
+                                          ];
+    UIAlertAction *defaultAction = [UIAlertAction actionWithTitle: @"Yes, I'm sure!"
+                                                            style:UIAlertActionStyleDestructive
+                                                          handler:nil
+                                    ];
     
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"NO Way!"
+                                                           style:UIAlertActionStyleCancel
+                                                         handler:nil
+                                   ];
+    
+    // add button into UIAlertController object
+    [alertController addAction: defaultAction];
+    [alertController addAction:cancelAction];
+    
+    [self presentViewController: alertController animated: YES completion: nil];
 }
 @end
