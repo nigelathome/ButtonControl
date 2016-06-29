@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abN-iQ-4aL">
-                                <rect key="frame" x="207" y="173" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abN-iQ-4aL">
+                                <rect key="frame" x="228" y="173" width="36" height="30"/>
                                 <state key="normal" title="Right"/>
                                 <connections>
                                     <action selector="rightBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9uc-rm-pzx"/>
@@ -31,8 +31,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPS-ze-n8e">
-                                <rect key="frame" x="64" y="173" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPS-ze-n8e">
+                                <rect key="frame" x="52" y="173" width="30" height="30"/>
                                 <state key="normal" title="Left"/>
                                 <connections>
                                     <action selector="leftBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sEU-5f-O8i"/>
@@ -73,14 +73,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="abN-iQ-4aL" secondAttribute="trailing" constant="47" id="2kf-6n-f4e"/>
-                            <constraint firstItem="SPS-ze-n8e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="NP9-T2-nWX"/>
+                            <constraint firstItem="SPS-ze-n8e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="153" id="5YM-fG-xha"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="abN-iQ-4aL" secondAttribute="trailing" constant="40" id="LNI-GM-AGh"/>
+                            <constraint firstItem="SPS-ze-n8e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="36" id="Nsf-gv-s2U"/>
                             <constraint firstItem="trp-fP-k40" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TQ2-iy-FhP"/>
                             <constraint firstItem="2Nu-DY-wNg" firstAttribute="width" secondItem="6VZ-xZ-CB9" secondAttribute="width" constant="3" id="Tcr-fE-PID"/>
                             <constraint firstItem="4X1-zb-wKv" firstAttribute="width" secondItem="aru-Rm-4Ga" secondAttribute="width" id="an1-PY-Jbb"/>
                             <constraint firstItem="c6J-3h-iH0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="daG-W2-6TD"/>
+                            <constraint firstItem="abN-iQ-4aL" firstAttribute="height" secondItem="SPS-ze-n8e" secondAttribute="height" id="f15-Nj-BAw"/>
                             <constraint firstItem="6VZ-xZ-CB9" firstAttribute="height" secondItem="2Nu-DY-wNg" secondAttribute="height" id="iWQ-DC-1r7"/>
                             <constraint firstItem="4X1-zb-wKv" firstAttribute="width" secondItem="aru-Rm-4Ga" secondAttribute="width" id="nnm-DV-ReZ"/>
+                            <constraint firstItem="abN-iQ-4aL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="153" id="rrp-G3-6vo"/>
                         </constraints>
                     </view>
                     <connections>
