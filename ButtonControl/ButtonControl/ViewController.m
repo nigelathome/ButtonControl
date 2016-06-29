@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.sliderLabel.text = @"50";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,12 +37,21 @@
     _statusLabel.text = plainText;
 }
 
-- (IBAction)textFieldDoneEditing:(id)sender {
+- (IBAction)nameTextFieldDoneEditing:(id)sender {
+    [sender resignFirstResponder];
+}
+
+- (IBAction)numberTextFieldDoneEditing:(id)sender {
     [sender resignFirstResponder];
 }
 
 - (IBAction)backgroundTap:(id)sender {
     [self.nameField resignFirstResponder];
     [self.numberField resignFirstResponder];
+}
+
+- (IBAction)sliderChanged:(UISlider *)sender {
+    int progress = lroundf(sender.value);
+    self.sliderLabel.text = [NSString stringWithFormat:@"%d", progress];
 }
 @end
