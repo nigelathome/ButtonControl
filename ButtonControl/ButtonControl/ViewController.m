@@ -66,25 +66,42 @@
 
 - (IBAction)doSomethingButtonPressed:(UIButton*)sender {
     // ios 8.3 UIAlertController instead of UIActionSheet
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle: @"Are you sure?"
-                                                                             message: nil
-                                                                      preferredStyle:UIAlertControllerStyleActionSheet
-                                          ];
-    UIAlertAction *defaultAction = [UIAlertAction actionWithTitle: @"Yes, I'm sure!"
-                                                            style:UIAlertActionStyleDestructive
-                                                          handler:nil
-                                    ];
-    
-    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Are You Sure?"
+                                                                        message:nil
+                                                                 preferredStyle:UIAlertControllerStyleActionSheet
+                                     ];
+    UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"Yes, I'm sure!"
+                             style:UIAlertActionStyleDestructive
+                           handler:^(UIAlertAction *action) {
+                               NSString *message;
+                               if ([self.nameField.text length] > 0) {
+                                   message = [NSString stringWithFormat:@"You can breathe easy, %@, everything went OK.", self.nameField.text];
+                               } else {
+                                   message = @"You can breathe easy, everything went OK";
+                               }
+                               action = [UIAlertAction actionWithTitle:@"Pnew"
+                                        style:UIAlertActionStyleDefault
+                                         
+                                               handler:nil
+                                ];
+                               UIAlertController *alertController2 = [UIAlertController alertControllerWithTitle:message
+                                                    message:nil
+                                            preferredStyle:UIAlertControllerStyleActionSheet
+                                                                      ];
+                               [alertController2 addAction:action];
+                               [self presentViewController: alertController2
+                                                  animated: YES
+                                                completion: nil
+                                ];
+
+                           }];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"NO Way!"
-                                                           style:UIAlertActionStyleCancel
-                                                         handler:nil
-                                   ];
+                                                               style:UIAlertActionStyleCancel
+                                                             handler:nil
+                                       ];
     
-    // add button into UIAlertController object
-    [alertController addAction: defaultAction];
+    [alertController addAction:defaultAction];
     [alertController addAction:cancelAction];
-    
-    [self presentViewController: alertController animated: YES completion: nil];
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 @end
