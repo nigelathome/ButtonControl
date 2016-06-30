@@ -70,17 +70,17 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type in a name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dsu-Zv-Jp4">
                                 <rect key="frame" x="81" y="95" width="216" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
                                 <connections>
-                                    <action selector="nameTextFieldDoneEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="v8u-qm-ytm"/>
+                                    <action selector="nameTextFieldDoneEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="hpt-VU-llF"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type in a number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8q4-7Y-tJ8">
                                 <rect key="frame" x="81" y="153" width="216" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
-                                    <action selector="numberTextFieldDoneEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="VSF-we-ZSR"/>
+                                    <action selector="numberTextFieldDoneEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="j96-w1-tZ9"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gw0-9G-kPk">
