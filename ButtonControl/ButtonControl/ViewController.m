@@ -26,11 +26,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)nameTextFieldDoneEditing:(id)sender {
+- (IBAction)nameTextFieldDoneEditing:(UITextField*)sender {
     [sender resignFirstResponder];
 }
 
-- (IBAction)numberTextFieldDoneEditing:(id)sender {
+- (IBAction)numberTextFieldDoneEditing:(UITextField*)sender {
     [sender resignFirstResponder];
 }
 
@@ -64,7 +64,7 @@
     }
 }
 
-- (IBAction)doSomethingButtonPressed:(id)sender {
+- (IBAction)doSomethingButtonPressed:(UIButton*)sender {
     // ios 8.3 UIAlertController instead of UIActionSheet
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle: @"Are you sure?"
                                                                              message: nil

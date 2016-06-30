@@ -10,12 +10,13 @@
 
 @interface ViewController : UIViewController
 
-- (IBAction)nameTextFieldDoneEditing:(id)sender;
-- (IBAction)numberTextFieldDoneEditing:(id)sender;
+- (IBAction)nameTextFieldDoneEditing:(UITextField*)sender;
+- (IBAction)numberTextFieldDoneEditing:(UITextField*)sender;
 - (IBAction)sliderChanged:(UISlider*)sender;
 - (IBAction)switchChanged:(UISwitch*)sender;
 - (IBAction)toggleControl:(UISegmentedControl*)sender;
-- (IBAction)doSomethingButtonPressed:(id)sender;
+- (IBAction)doSomethingButtonPressed:(UIButton*)sender;
+- (IBAction)backgroundTap:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *numberField;
