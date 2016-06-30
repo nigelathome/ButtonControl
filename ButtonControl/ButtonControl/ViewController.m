@@ -86,7 +86,7 @@
                                 ];
                                UIAlertController *alertController2 = [UIAlertController alertControllerWithTitle:message
                                                     message:nil
-                                            preferredStyle:UIAlertControllerStyleActionSheet
+                                            preferredStyle:UIAlertControllerStyleAlert
                                                                       ];
                                [alertController2 addAction:action];
                                [self presentViewController: alertController2
