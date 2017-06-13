@@ -35,7 +35,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bIl-gm-Ogo"/>
-                                    <segue destination="5MX-kr-cUl" kind="presentation" id="HeW-Xa-oJ5"/>
+                                    <segue destination="5MX-kr-cUl" kind="presentation" identifier="firstSegue" id="HeW-Xa-oJ5"/>
                                 </connections>
                             </button>
                         </subviews>

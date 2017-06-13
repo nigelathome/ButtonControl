@@ -67,6 +67,7 @@ class ViewController: UIViewController {
         
         let yesAction = UIAlertAction(title: "Yes, I'm sure!",
                             style: .destructive, handler: { action in
+                                self.performSegue(withIdentifier: "firstSegue", sender: self)
 //            let msg = self.nameField.text!.isEmpty
 //                    ? "You can breathe easy, everything went OK."
 //                    : "You can breathe easy, \(self.nameField.text),"
