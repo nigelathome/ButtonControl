@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, PlayerControllerDelegate {
 
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var numberField: UITextField!
@@ -18,12 +18,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var rightSwitch: UISwitch!
     @IBOutlet weak var startJourneyButton: UIButton!
     
-    let controller = PlayerController()
+    let audioController = PlayerController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 //        sliderLabel.text = "50"
+        audioController.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -71,9 +72,9 @@ class ViewController: UIViewController {
         let yesAction = UIAlertAction(title: "Yes, I'm sure!",
                             style: .destructive, handler: { action in
                                 self.performSegue(withIdentifier: "firstSegue", sender: self)
-                                if !controller.playing {
-                                    controller.play()
-                                    playLabel.text = NSLocalizedString("Stop", comment: "")
+                                if !self.audioController.playing {
+                                    self.audioController.play()
+//                                    playLabel.text = NSLocalizedString("Stop", comment: "")
                                 }
 //            let msg = self.nameField.text!.isEmpty
 //                    ? "You can breathe easy, everything went OK."
@@ -99,5 +100,16 @@ class ViewController: UIViewController {
         
         present(controller, animated: true, completion: nil)
     }
+    
+    func playbackBegan() {
+//        playButton.isSelected = true
+//        playLabel.text = NSLocalizedString("Stop", comment: "")
+    }
+    
+    func playbackStopped() {
+//        playButton.isSelected = false
+//        playLabel.text = NSLocalizedString("Play", comment: "")
+    }
+
 }
 

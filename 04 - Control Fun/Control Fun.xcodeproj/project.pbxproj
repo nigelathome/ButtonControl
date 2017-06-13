@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9152115C1EEFDBAD006C46B9 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152115B1EEFDBAD006C46B9 /* PlayerController.swift */; };
+		915211641EEFEDE8006C46B9 /* bass.caf in Resources */ = {isa = PBXBuildFile; fileRef = 915211611EEFEDE8006C46B9 /* bass.caf */; };
+		915211651EEFEDE8006C46B9 /* drums.caf in Resources */ = {isa = PBXBuildFile; fileRef = 915211621EEFEDE8006C46B9 /* drums.caf */; };
+		915211661EEFEDE8006C46B9 /* guitar.caf in Resources */ = {isa = PBXBuildFile; fileRef = 915211631EEFEDE8006C46B9 /* guitar.caf */; };
 		B6F88E9A19CF8071008AAEF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F88E9919CF8071008AAEF2 /* AppDelegate.swift */; };
 		B6F88E9C19CF8071008AAEF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F88E9B19CF8071008AAEF2 /* ViewController.swift */; };
 		B6F88E9F19CF8071008AAEF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F88E9D19CF8071008AAEF2 /* Main.storyboard */; };
@@ -28,6 +31,9 @@
 
 /* Begin PBXFileReference section */
 		9152115B1EEFDBAD006C46B9 /* PlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		915211611EEFEDE8006C46B9 /* bass.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bass.caf; sourceTree = "<group>"; };
+		915211621EEFEDE8006C46B9 /* drums.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = drums.caf; sourceTree = "<group>"; };
+		915211631EEFEDE8006C46B9 /* guitar.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = guitar.caf; sourceTree = "<group>"; };
 		B6F88E9419CF8071008AAEF2 /* Control Fun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Control Fun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F88E9819CF8071008AAEF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6F88E9919CF8071008AAEF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +64,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		915211601EEFEDE8006C46B9 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				915211611EEFEDE8006C46B9 /* bass.caf */,
+				915211621EEFEDE8006C46B9 /* drums.caf */,
+				915211631EEFEDE8006C46B9 /* guitar.caf */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
 		B6F88E8B19CF8071008AAEF2 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +95,7 @@
 		B6F88E9619CF8071008AAEF2 /* Control Fun */ = {
 			isa = PBXGroup;
 			children = (
+				915211601EEFEDE8006C46B9 /* audio */,
 				B6F88E9919CF8071008AAEF2 /* AppDelegate.swift */,
 				B6F88E9B19CF8071008AAEF2 /* ViewController.swift */,
 				B6F88E9D19CF8071008AAEF2 /* Main.storyboard */,
@@ -197,7 +214,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				915211661EEFEDE8006C46B9 /* guitar.caf in Resources */,
+				915211651EEFEDE8006C46B9 /* drums.caf in Resources */,
 				B6F88E9F19CF8071008AAEF2 /* Main.storyboard in Resources */,
+				915211641EEFEDE8006C46B9 /* bass.caf in Resources */,
 				B6F88EA419CF8071008AAEF2 /* LaunchScreen.xib in Resources */,
 				B6F88EA119CF8071008AAEF2 /* Images.xcassets in Resources */,
 			);
