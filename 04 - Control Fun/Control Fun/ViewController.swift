@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -16,6 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var leftSwitch: UISwitch!
     @IBOutlet weak var rightSwitch: UISwitch!
     @IBOutlet weak var startJourneyButton: UIButton!
+    
+    let controller = PlayerController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +71,10 @@ class ViewController: UIViewController {
         let yesAction = UIAlertAction(title: "Yes, I'm sure!",
                             style: .destructive, handler: { action in
                                 self.performSegue(withIdentifier: "firstSegue", sender: self)
+                                if !controller.playing {
+                                    controller.play()
+                                    playLabel.text = NSLocalizedString("Stop", comment: "")
+                                }
 //            let msg = self.nameField.text!.isEmpty
 //                    ? "You can breathe easy, everything went OK."
 //                    : "You can breathe easy, \(self.nameField.text),"
