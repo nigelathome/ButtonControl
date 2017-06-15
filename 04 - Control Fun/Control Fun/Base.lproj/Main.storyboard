@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--StartupView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Control_Fun" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="StartupView" id="BYZ-38-t0r" customClass="ViewController" customModule="Control_Fun" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -27,10 +27,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wct-NU-ZBx">
                                 <rect key="frame" x="122" y="560" width="130" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="SPD-xJ-Yhj"/>
+                                    <constraint firstAttribute="width" constant="130" id="OAV-e6-Qly"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <state key="normal" title="心路历程" backgroundImage="whiteButton">
+                                <state key="normal" title="start traversal" backgroundImage="whiteButton">
                                     <color key="titleColor" red="0.019513288512825966" green="0.17067435383796692" blue="0.9813113808631897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -40,11 +40,11 @@
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wct-NU-ZBx" secondAttribute="bottom" constant="47" id="5OU-Wf-M6r"/>
+                            <constraint firstItem="Wct-NU-ZBx" firstAttribute="centerX" secondItem="6Wx-Ob-yCH" secondAttribute="centerX" id="AKa-s0-QzG"/>
                             <constraint firstItem="6Wx-Ob-yCH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="AoO-BZ-Vgi"/>
+                            <constraint firstItem="Wct-NU-ZBx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="540" id="HDH-Uv-NXo"/>
                             <constraint firstAttribute="trailing" secondItem="6Wx-Ob-yCH" secondAttribute="trailing" id="Jy1-QD-AZr"/>
-                            <constraint firstItem="Wct-NU-ZBx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="540" id="Oxw-iT-IdC"/>
-                            <constraint firstItem="Wct-NU-ZBx" firstAttribute="centerX" secondItem="6Wx-Ob-yCH" secondAttribute="centerX" id="TEd-3M-fim"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wct-NU-ZBx" secondAttribute="bottom" constant="47" id="ctF-7u-idt"/>
                             <constraint firstItem="6Wx-Ob-yCH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dMZ-Wm-SH3"/>
                             <constraint firstItem="6Wx-Ob-yCH" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="g4Y-HU-XtW"/>
                         </constraints>
@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="140" y="137.18140929535232"/>
         </scene>
-        <!--View Controller-->
+        <!--MapOverView-->
         <scene sceneID="HIk-VZ-3a7">
             <objects>
-                <viewController id="5MX-kr-cUl" sceneMemberID="viewController">
+                <viewController title="MapOverView" id="5MX-kr-cUl" customClass="LineOverview" customModule="Control_Fun" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LxO-3j-CzD"/>
                         <viewControllerLayoutGuide type="bottom" id="m4d-PW-XLi"/>
@@ -71,15 +71,25 @@
                     <view key="view" contentMode="scaleToFill" id="VfA-5C-tBB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ogi-kf-5zT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="2339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.98823529409999999" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="Ogi-kf-5zT" id="s6Y-NE-xvX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ymR-hN-A6E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="880" y="141"/>
+            <point key="canvasLocation" x="879.20000000000005" y="139.880059970015"/>
         </scene>
     </scenes>
     <resources>
+        <image name="1.pic.jpg" width="438" height="2420"/>
         <image name="jvjv" width="959" height="1280"/>
         <image name="whiteButton" width="29" height="38"/>
     </resources>

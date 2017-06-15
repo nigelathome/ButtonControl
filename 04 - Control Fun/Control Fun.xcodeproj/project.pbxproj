@@ -11,6 +11,9 @@
 		915211641EEFEDE8006C46B9 /* bass.caf in Resources */ = {isa = PBXBuildFile; fileRef = 915211611EEFEDE8006C46B9 /* bass.caf */; };
 		915211651EEFEDE8006C46B9 /* drums.caf in Resources */ = {isa = PBXBuildFile; fileRef = 915211621EEFEDE8006C46B9 /* drums.caf */; };
 		915211661EEFEDE8006C46B9 /* guitar.caf in Resources */ = {isa = PBXBuildFile; fileRef = 915211631EEFEDE8006C46B9 /* guitar.caf */; };
+		91AE578A1EF2727A0062BAF8 /* LineOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AE57891EF2727A0062BAF8 /* LineOverview.swift */; };
+		91AE578E1EF288090062BAF8 /* testPic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 91AE578D1EF288090062BAF8 /* testPic.jpeg */; };
+		91AE57901EF28B5B0062BAF8 /* 1.pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91AE578F1EF28B5B0062BAF8 /* 1.pic.jpg */; };
 		B6F88E9A19CF8071008AAEF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F88E9919CF8071008AAEF2 /* AppDelegate.swift */; };
 		B6F88E9C19CF8071008AAEF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F88E9B19CF8071008AAEF2 /* ViewController.swift */; };
 		B6F88E9F19CF8071008AAEF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F88E9D19CF8071008AAEF2 /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 		915211611EEFEDE8006C46B9 /* bass.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bass.caf; sourceTree = "<group>"; };
 		915211621EEFEDE8006C46B9 /* drums.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = drums.caf; sourceTree = "<group>"; };
 		915211631EEFEDE8006C46B9 /* guitar.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = guitar.caf; sourceTree = "<group>"; };
+		91AE57891EF2727A0062BAF8 /* LineOverview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineOverview.swift; sourceTree = "<group>"; };
+		91AE578D1EF288090062BAF8 /* testPic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = testPic.jpeg; path = ../../../../Desktop/testPic.jpeg; sourceTree = "<group>"; };
+		91AE578F1EF28B5B0062BAF8 /* 1.pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.pic.jpg; path = ../../../../Desktop/1.pic.jpg; sourceTree = "<group>"; };
 		B6F88E9419CF8071008AAEF2 /* Control Fun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Control Fun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F88E9819CF8071008AAEF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6F88E9919CF8071008AAEF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +101,8 @@
 		B6F88E9619CF8071008AAEF2 /* Control Fun */ = {
 			isa = PBXGroup;
 			children = (
+				91AE578F1EF28B5B0062BAF8 /* 1.pic.jpg */,
+				91AE578D1EF288090062BAF8 /* testPic.jpeg */,
 				915211601EEFEDE8006C46B9 /* audio */,
 				B6F88E9919CF8071008AAEF2 /* AppDelegate.swift */,
 				B6F88E9B19CF8071008AAEF2 /* ViewController.swift */,
@@ -103,6 +111,7 @@
 				B6F88EA219CF8071008AAEF2 /* LaunchScreen.xib */,
 				B6F88E9719CF8071008AAEF2 /* Supporting Files */,
 				9152115B1EEFDBAD006C46B9 /* PlayerController.swift */,
+				91AE57891EF2727A0062BAF8 /* LineOverview.swift */,
 			);
 			path = "Control Fun";
 			sourceTree = "<group>";
@@ -217,7 +226,9 @@
 				915211661EEFEDE8006C46B9 /* guitar.caf in Resources */,
 				915211651EEFEDE8006C46B9 /* drums.caf in Resources */,
 				B6F88E9F19CF8071008AAEF2 /* Main.storyboard in Resources */,
+				91AE57901EF28B5B0062BAF8 /* 1.pic.jpg in Resources */,
 				915211641EEFEDE8006C46B9 /* bass.caf in Resources */,
+				91AE578E1EF288090062BAF8 /* testPic.jpeg in Resources */,
 				B6F88EA419CF8071008AAEF2 /* LaunchScreen.xib in Resources */,
 				B6F88EA119CF8071008AAEF2 /* Images.xcassets in Resources */,
 			);
@@ -237,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91AE578A1EF2727A0062BAF8 /* LineOverview.swift in Sources */,
 				B6F88E9C19CF8071008AAEF2 /* ViewController.swift in Sources */,
 				B6F88E9A19CF8071008AAEF2 /* AppDelegate.swift in Sources */,
 				9152115C1EEFDBAD006C46B9 /* PlayerController.swift in Sources */,
