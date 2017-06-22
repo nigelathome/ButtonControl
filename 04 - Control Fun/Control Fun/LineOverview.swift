@@ -10,12 +10,13 @@ import Foundation
 import UIKit
 
 class LineOverview: UIViewController, UIScrollViewDelegate {
-    @IBOutlet weak var startJourneyButton: UIButton!
+
     @IBOutlet weak var mapView: UIImageView!
-    var scrollView:UIScrollView!
+    @IBOutlet weak var meetup: UIButton!
+    var scrollView: UIScrollView!
     
     override func viewDidLoad() {
-        
+    
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         scrollView = UIScrollView()
@@ -25,6 +26,7 @@ class LineOverview: UIViewController, UIScrollViewDelegate {
         scrollView.contentSize = mapView.bounds.size
         scrollView.addSubview(mapView)
         self.view.addSubview(scrollView)
+        scrollView.addSubview(meetup)
         
     }
     

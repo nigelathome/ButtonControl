@@ -76,11 +76,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="2420"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKn-Z3-BYs">
+                                <rect key="frame" x="162" y="529" width="106" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="发工资的日子"/>
+                                <connections>
+                                    <action selector="btnPressed:" destination="5MX-kr-cUl" eventType="touchUpInside" id="P5p-P2-gPR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98823529409999999" green="0.76470588240000004" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="Ogi-kf-5zT" id="s6Y-NE-xvX"/>
+                        <outlet property="meetup" destination="HKn-Z3-BYs" id="L7n-VE-4jA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ymR-hN-A6E" userLabel="First Responder" sceneMemberID="firstResponder"/>
