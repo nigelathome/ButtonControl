@@ -1,5 +1,4 @@
 # ButtonControl
-guide to learn how to use UIButton n UILabel with this project
 The issue needed to be solve 
 
 1.slide the scrollview horizontally 
