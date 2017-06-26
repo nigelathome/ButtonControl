@@ -23,18 +23,28 @@ class LineOverview: UIViewController, UIScrollViewDelegate {
         scrollView = UIScrollView()
         //设置代理
         scrollView.delegate = self
-        scrollView.frame = self.view.bounds
+//        scrollView.frame = self.view.bounds
+        scrollView.frame = CGRect(x: 0, y: 0, width: 375*2 - 80 , height: 667)
         scrollView.contentSize = mapView.bounds.size
+//        scrollView.isDirectionalLockEnabled = true
+//        scrollView.alwaysBounceHorizontal = true
         scrollView.addSubview(mapView)
         self.view.addSubview(scrollView)
         scrollView.addSubview(meetup)
         scrollView.addSubview(birthday)
-        mapView.isHidden = true
+//        mapView.isHidden = true
+
         
+//        UIDevice.current.setValue(UIInterfaceOrientation.landscapeLeft.rawValue, forKey: "orientation")
     }
     
     @IBAction func btnPressed(_ sender: Any) {
 //        self.startJourneyButton.titleLabel?.text = "progress"
 //        NSLog("pressed")
+    }
+    private var _orientations = UIInterfaceOrientationMask.landscapeRight
+    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+        get { return self._orientations }
+        set { self._orientations = newValue }
     }
 }
