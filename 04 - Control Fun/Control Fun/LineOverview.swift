@@ -13,6 +13,7 @@ class LineOverview: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var mapView: UIImageView!
     @IBOutlet weak var meetup: UIButton!
+    @IBOutlet weak var birthday: UIButton!
     var scrollView: UIScrollView!
     
     override func viewDidLoad() {
@@ -27,6 +28,8 @@ class LineOverview: UIViewController, UIScrollViewDelegate {
         scrollView.addSubview(mapView)
         self.view.addSubview(scrollView)
         scrollView.addSubview(meetup)
+        scrollView.addSubview(birthday)
+        mapView.isHidden = true
         
     }
     
